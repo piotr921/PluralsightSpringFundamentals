@@ -1,0 +1,29 @@
+package com.pluralsight.service;
+
+import java.util.List;
+
+import com.pluralsight.model.Customer;
+import com.pluralsight.repository.CustomerRepository;
+
+public class CustomerServiceImpl implements CustomerService {
+	
+	private CustomerRepository customerRepository;
+	
+	pubpublic CustomerServiceImpl(){}
+	
+	public CustomerServiceImpl(CustomerRepository customerRepository){
+		System.out.println("Constructor injection");
+		this.customerRepository = customerRepository;
+	}
+	
+	public void setCustomerRepository(CustomerRepository customerRepository) {
+		System.out.println("Setter injection");
+		this.customerRepository = customerRepository;
+	}
+
+	@Override
+	public List<Customer> findAll(){
+		return customerRepository.findAll();
+	}
+
+}

@@ -1,0 +1,2 @@
+INDEX VERSION 1.129+C:\Users\Comarch\Documents\Java\SpringBeginTutorial\.metadata\.plugins\org.eclipse.jdt.core
+2648308516.index
